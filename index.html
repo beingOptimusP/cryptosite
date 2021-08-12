@@ -12,6 +12,7 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/faq.css">
         <link rel="shortcut icon" href="assets/img/TabIcon.ico">
         <title>My site</title>
     </head>
@@ -24,7 +25,6 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
-                         <ul class="nav__list grid">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-estate nav__icon"></i> Home
@@ -69,6 +69,7 @@
                 </div>
             </nav>
         </header>
+        <main class="main">
 
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
@@ -109,7 +110,7 @@
                     </div>
 
                     <div class="home__scroll">
-                        <a href="#about" class="button--flex home__scroll-button">
+                        <a href="#certificates" class="button--flex home__scroll-button">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                             <span class="home__scroll-name">Scroll down</span>
                             <i class="uil uil-arrow-circle-down home__scroll-arrow"></i>
@@ -123,7 +124,6 @@
 
                     <!-- Services 1 -->
                     <div class="services__content">
-					                <center><img src="assets/img/lips.png"></center>
 				
                 <span class="section__subtitle">FuckingTaxes</span>
 
@@ -149,83 +149,84 @@
                                 </ul>
                             </div>
                         </div>
-                 
+                 </div>
             </section>
+			<center>
 			
-			
-			    <div class="container">
-      <h2>Frequently Asked Questions</h2>
-      <div class="accordion">
-        <div class="accordion-item">
-          <button id="accordion-button-1" aria-expanded="false">
-            <span class="accordion-title">Why is the moon sometimes out during the day?</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-              Ut tortor pretium viverra suspendisse potenti.
-            </p>
+			     <div class="wrapper">
+				                 <h2 class="section__title">FAQ</h2>
+
+    <!-- Accordion Heading One -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-1" checked>
+      <label for="tab-1">
+        <span>Accordion Heading One</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit. Quam, repellendus facere, id porro magnam blanditiiss quoteos dolores ratione quidem ipsam esse quos pariatur, repellat obcaecati!</p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Two -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-2">
+      <label for="tab-2">
+        <span>Accordion Heading Two</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit. Quam, repellendus facere, id porro magnam blanditiiss quoteos dolores ratione quidem ipsam esse quos pariatur, repellat obcaecati!</p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Three -->
+    <div class="parent-tab tab-3">
+      <input type="radio" name="tab" id="tab-3">
+      <label for="tab-3" class="tab-3">
+        <span>Accordion Heading Three</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <!-- Sub Heading One -->
+        <div class="child-tab">
+          <input type="checkbox" name="sub-tab" id="tab-4">
+          <label for="tab-4">
+            <span>Sub Heading One</span>
+            <div class="icon"><i class="fas fa-plus"></i></div>
+          </label>
+          <div class="sub-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit dolor. Utfacilis labore, exercitationem fuga minima a illo modi vitaerse dignissimos? Vero?</p>
           </div>
         </div>
-        <div class="accordion-item">
-          <button id="accordion-button-2" aria-expanded="false">
-            <span class="accordion-title">Why is the sky blue?</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-              Ut tortor pretium viverra suspendisse potenti.
-            </p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordion-button-3" aria-expanded="false">
-            <span class="accordion-title">Will we ever discover aliens?</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-              Ut tortor pretium viverra suspendisse potenti.
-            </p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordion-button-4" aria-expanded="false">
-            <span class="accordion-title">How much does the Earth weigh?</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-              Ut tortor pretium viverra suspendisse potenti.
-            </p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordion-button-5" aria-expanded="false">
-            <span class="accordion-title">How do airplanes stay up?</span>
-            <span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-              Ut tortor pretium viverra suspendisse potenti.
-            </p>
+        <!-- Sub Heading Two -->
+        <div class="child-tab">
+          <input type="checkbox" name="sub-tab" id="tab-5">
+          <label for="tab-5">
+            <span>Sub Heading Two</span>
+            <div class="icon"><i class="fas fa-plus"></i></div>
+          </label>
+          <div class="sub-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit dolor. Utfacilis labore, exercitationem fuga minima a illo modi vitaerse dignissimos? Vero?</p>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Accordion Heading Four -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-6">
+      <label for="tab-6">
+        <span>Accordion Heading Four</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing thelit. Quam, repellendus facere, id porro magnam blanditiiss quoteos dolores ratione quidem ipsam esse quos pariatur, repellat obcaecati!</p>
+      </div>
+    </div>
+  </div>
 
-
+</center>
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
@@ -239,11 +240,6 @@
                             <i class="uil uil-award qualification__icon"></i>
                             View Roadmap
                         </div>
-
-                        <!-- <div class="qualification__button button--flex" data-target="#work" >
-                            <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Work
-                        </div> -->
                         
                     </div>
 
